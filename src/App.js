@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import Beach from './images/beach-clouds.jpg';
+import Clouds from './images/clouds-day.jpg';
+import Forest from './images/fog-forest.jpg';
+import Sunset from './images/sunset-poppy.jpg';
 
 class App extends React.Component {
     
@@ -46,7 +50,25 @@ class App extends React.Component {
           <button onClick={this.increaseClick}>Add Visitor</button>
           {/* <button onClick={this.decreaseClick}>Decrease</button> */}
           <button onClick={this.resetClicks}>Reset</button>
-          <h3>  Visitor Count: {this.state.count}</h3>
+          <h4>  Visitor Count: {this.state.count}</h4>
+        </div>
+          <div className="galleryTitle">
+            <h1>Online Gallery Showcase</h1>
+            
+          </div>
+        <div className="holdGallery">
+          <div className="galleryImg">
+            <img src={Beach} alt="Bright beach day" />
+          </div>
+          <div className="galleryImg">
+             <img src={Clouds} alt="Bright beach day" />
+          </div>
+          <div className="galleryImg">
+             <img src={Forest} alt="Bright beach day" />
+          </div>
+          <div className="galleryImg">
+              <img src={Sunset} alt="Bright beach day" />
+          </div>
         </div>
       </div>
     );
